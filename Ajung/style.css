@@ -1,0 +1,57 @@
+#logoHeader {
+    height: 60%;
+    width: 60%;
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.7);
+    font-size: medium;
+    font-family: sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel-inner {
+    max-height: 600px;
+}
+
+.carousel-indicators  li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#botaoBuscar {
+    color: rgb(82, 209, 146);
+
+}
+
+footer {
+    background-color: black;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+}
+
+#logoFooter {
+    height: 72px;
+    width: 62px;
+}
+
+.footerTitle {
+    color: rgb(82, 209, 146);
+    font-weight: bold;
+}
+
+#copyrightText {
+    margin-top: 13px;
+    color:grey;
+    min-width: 200px;
+}
+
+#contato {
+    min-width: 300px;
+}
