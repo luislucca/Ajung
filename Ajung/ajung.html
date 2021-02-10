@@ -5,40 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajung Soluções Corporativas LTDA.</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- HEADER -->
     <header class="header">
         <nav id="navbar" class="navbar navbar-expand-sm navbar-dark fixed-top px-5">
-            <a class="navbar-brand navbar-header ms-4" href="https://www.ajung.com.br">
+            <a class="navbar-brand navbar-header mr-4" href="https://www.ajung.com.br">
                 <img id="logoHeader" src="img/logo.png" alt="Site Ajung">
             </a>
-            <button class="navbar-toggler me-4" type="button" data-target="#navbarNav" data-toggle="collapse"
+            <button class="navbar-toggler m-4" type="button" data-target="#navbarNav" data-toggle="collapse"
                 aria-expanded="false" aria-controls="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navbarNav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto me-4">
-                    <li class="nav-item mx-4">
-                        <a class="nav-link text-white" href=#carousel>Home</a>
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href=#carousel1>Home</a>
                     </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link text-white" href=#contato>Endereço</a>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href=#cep>Endereço</a>
                     </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link text-white" href=#contato>Contato</a>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href=#contato>Contato</a>
                     </li>
                 </ul>
             </div>
@@ -46,48 +37,60 @@
     </header>
 
     <main>
-        <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+
             <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
             </ol>
 
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid" src="img/pic3.jpg" alt="First slide">
+                <div class="carousel-item pic-1 active">
+                    <img class="d-block w-100" src="img/lamp1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h3>Banner carousel.</h3>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 img-fluid" src="img/pic4.jpg" alt="Second slide">
+                <div class="carousel-item pic-2">
+                    <img class="d-block w-100" src="img/lamp2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h3>Banner carousel.</h3>
+                    </div>
+                </div>
+                <div class="carousel-item pic-3">
+                    <img class="d-block w-100" src="img/lamp3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h3>Banner carousel.</h3>
+                    </div>
                 </div>
             </div>
             
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
-
-        <div class="container-fluid">
-            <form action="" class="needs-validation" novalidate>
-                <div class="form-group">
-                    <label class="mx-auto" for="cep">Busque seu endereço em poucos passos:</label>
-                    <input class="form-control" type="number" placeholder="Digite seu CEP" id="cep" required>
-                    <div class="invalid-feedback">CEP inválido.</div>
-                    <button id="botaoBuscar" type="submit" class="btn">Buscar</button>
-                </div>
-            </form>
-        </div>
+        
+        <form class="needs-validation form-style" novalidate>
+            <div class="col form-group py-5 mx-auto text-center">
+                <h4 class="mb-5" for="cep">Busque seu endereço em poucos passos:</h4>
+                <input id="cep" class="form-control bg-transparent input-cep mx-auto mb-4 px-0" type="text" placeholder="Digite seu CEP" aria-describedby="ajudaCep" maxlenght="8" required>
+                <div class="invalid-feedback">CEP inválido.</div>
+                <button id="botaoBuscar" class="button-search py-2" type="submit">Buscar</button>
+            </div>
+        </form>
     </main>
 
     <!-- FOOTER -->
-    <footer class="container-fluid d-flex">
+    <footer class="container-fluid py-5">
         <div class="col-lg-12 col-md-6 col-sm-3 col-xs mx-auto align-items-center">
             <div class="row w-75 mx-auto justify-content-center">
 
-                <div id="copyright" class="col-md">
-                    <div class="container-inner text-center">
+                <div id="copyright" class="col-md text-center">
+                    <div class="container-inner">
                         <img id="logoFooter" src="img/logo.png" class="align-bottom" alt="Logo Ajung">
                         <p id="copyrightText">@2018 Direitos reservados.</p>
                     </div>
@@ -119,5 +122,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 </html>

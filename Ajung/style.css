@@ -1,3 +1,8 @@
+body {
+    background-color:black;
+    color:white;
+}
+
 #logoHeader {
     height: 60%;
     width: 60%;
@@ -10,23 +15,77 @@
     color: white;
 }
 
+.nav-link{
+    color:white !important;
+}
+
 a {
     text-decoration: none;
 }
 
-.carousel-inner {
-    max-height: 600px;
+.carousel {
+    background-color: black;
 }
 
-.carousel-indicators  li {
+.carousel-inner {
+    max-height: 450px;
+}
+
+.carousel-indicators > li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
 
-#botaoBuscar {
-    color: rgb(82, 209, 146);
+.carousel-item {
+    min-height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
+.form-style {
+    background-image: url("img/cidade.jpg");
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.input-cep{
+    border-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0%;
+    border-width: 0 0 1px ;
+    color: white;
+    outline: 0;
+    width: 270px;
+}
+
+::-webkit-input-placeholder {
+   color: white !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white !important;
+}
+
+:-ms-input-placeholder {  
+   color: white !important;
+}
+
+.button-search {
+    background-color: rgb(82, 209, 146);
+    border: none;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    margin: 25px 0px 25px 0px;
+    width: 125px
 }
 
 footer {
