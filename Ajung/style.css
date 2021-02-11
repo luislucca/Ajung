@@ -58,9 +58,32 @@ a {
     border-color: rgba(255, 255, 255, 0.8);
     border-radius: 0%;
     border-width: 0 0 1px ;
+    box-shadow: none;
     color: white;
-    outline: 0;
+    outline: none !important;
+    outline-width: 0;
     width: 270px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.table {
+    background-color:rgba(53, 52, 52, 0.6);
+    border-radius: 15px;
+    max-width: 75%;
+}
+
+tr .border-bottom {
+    border-width: 50%;
 }
 
 ::-webkit-input-placeholder {
@@ -79,13 +102,16 @@ a {
    color: white !important;
 }
 
-.button-search {
-    background-color: rgb(82, 209, 146);
+.button {
     border: none;
     border-radius: 25px;
-    color: rgb(255, 255, 255);
     margin: 25px 0px 25px 0px;
-    width: 125px
+    min-width: 125px
+}
+
+.search {
+    background-color: rgb(82, 209, 146);
+    color: rgb(255, 255, 255);
 }
 
 footer {
