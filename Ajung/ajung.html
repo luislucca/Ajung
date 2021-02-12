@@ -75,17 +75,14 @@
             </a>
         </div>
         
-        <form class="needs-validation form-style" novalidate>
-            <div class="col form-group py-5 mx-auto text-center mb-auto">
-                <h4 class="mb-5" for="cepInput">Busque seu endereço em poucos passos:</h4>
-                <input id="cepInput" class="row bg-transparent cep-input mx-auto mb-4 px-0" type="text" placeholder="Digite seu CEP (apenas números)" maxlength="8" required/>
-                <div class="invalid-feedback">CEP inválido.</div>
-                <button id="searchButton" class="button search py-2" type="button">Buscar</button>
+        <form class="col needs-validation form-style text-center mx-auto mb-4 py-5" novalidate>
+            <h4 class="mb-5" for="cepInput">Busque seu endereço em poucos passos:</h4>
+            <input id="cepInput" class="row bg-transparent cep-input mx-auto mb-4 px-0" type="text" placeholder="Digite seu CEP (apenas números)" maxlength="8" required/>
+            <div class="invalid-feedback">CEP inválido.</div>
+            <button id="searchButton" class="button search py-2" type="button">Buscar</button>
+            <div id="resultContainer" class="container mx-auto mb-auto">
             </div>
-            <div class="row mx-auto">
-
-            </div>
-            <button id="clear" class="button text-muted py-2 px-3" type="submit" onclick="clear()">Limpar Resultados</button>
+            <button id="clearButton" class="button text-muted py-2 px-3" type="button">Limpar Resultados</button>
         </form>
     </main>
 
