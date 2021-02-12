@@ -1,28 +1,42 @@
-function onlyNumb(textarea, counter, limit) {
-    $('.' + input).on('keydown', function(e){
-        var qttCharacters = $(this).val().length;
-        left = limit - qttCharacters;
+$(function() {
+    
+    $("#searchButton").click(function() {
+        var cepNum = $("#cepInput").val();
+        
+        if(cepNum != "") {
+            if(cepNum) {
+                urlStr = "https://viacep.com.br/ws/" + cepNum + "/json/";
+                $.ajax(urlStr, {
+                    dataType: 'json',
+                    type: 'GET',
+                    success: function(data) {
+                        
+                    }
+                });
+                    // if (!("erro" in dados)) {
+                    //     var cep = dados.cep;
+                    //     var logradouro = dados.logradouro;
+                    //     var bairro = dados.bairro;
+                    //     var localidade = dados.localidade;
+                    //     var uf = dados.uf;
+                    //     var gia = dados.gia;
+                    //     var ibge = dados.ibge;
+                        
+                    //     const resultContainer = $("#resultContainer");
+                        
+                    //     function createCard() {
+                    //         const result = document.createElement('table');
+                    //         result.classList = "table table-dark mx-auto";
+                    //     }
+
+                    //     function createButton() {
+                    //         const clearButton = document.
+                    //     }
+
+                    //     const content = `
+                    //         <thead>
+                    // };
+            };
+        };
     });
-}
-
-handleChange = (e) => {
-    const val = e.target.value
-    const max = 1000
-    const maxLength = max.toString().length - 1
-    const newVal = val < max ? val : parseInt(val.toString().substring(0, maxLength))
-    // setState, etc.     
-}
-
-// $(document).ready(function () {
-
-//     function limpa_formulário_cep() {
-//         // Limpa valores do formulário de cep.
-//         $("#getCep").val("");
-//         $("#getLogra").val("");
-//         $("#getBairro").val("");
-//         $("#getLocal").val("");
-//         $("#getUf").val("");
-//         $("#getGia").val("");
-//         $("#getIbge").val("");
-//     }
-// });
+});

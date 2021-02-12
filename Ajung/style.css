@@ -54,7 +54,7 @@ a {
     position: relative;
 }
 
-.input-cep{
+.cep-input{
     border-color: rgba(255, 255, 255, 0.8);
     border-radius: 0%;
     border-width: 0 0 1px ;
